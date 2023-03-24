@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Travel '7' Wonders</title>
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="style.css">
+
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+   <!-- Font Awesome -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+   <link rel="icon" href="Assets/Logo/favicon.png">
+</head>
+
+<body id="Entry">
+
+<section id="nav-top">
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-lg bg-light" id="mainNav">
+      <div class="container px-5" row>
+         <div class="col-4 col-md-4">
+            <img class="logo" src="Assets/Logo/favicon.png" alt="">
+         </div>
+         <div class="col-4 col-md-4">
+            <a class="navbar-brand fw-bold" href="#page-top">TRAVEL "7" WONDERS</a>
+         </div>
+         <div class="col-4 col-md-4" style="text-align:right;">
+            <a href="#">
+               <button class="btn btn-dark rounded-pill px-3 mb-2 mb-lg-0 register-btn entry-login" onclick="openForm(),rcloseForm()"><b class="me-2">Log in</b>
+               </button>
+            </a>
+            <a href="#">
+               <button class="btn btn-light rounded-pill px-3 mb-2 mb-lg-0 register-btn entry-register" onclick="ropenForm(),closeForm()"><b class="me-2">Register</b>
+               </button>
+            </a>
+         </div>
+      </div>
+   </nav>
+</section>
+
+   <br><br><br>
+   <section id="Entry">
+
+
+      <img src="Assets/Pics/entry.webp" alt="" class="entry-image">
+      <div class="entry">
+         <p class="entry-text">Explore, Discover, Travel</p>
+         <h1 class="entry-heading">TRAVEL AROUND<br>THE WORLD</h1>
+         <button type="button" name="button" class="entry-button" onclick="openForm(),rcloseForm()">Discover More ></button>
+      </div>
+
+      <div class="register-box bg-dark" id="Register-Form">
+         <form id="form" class="login-form-main" action="register.php" method="post">
+            <h4 class="login-head">Register</h4>
+            <button type="button" name="button" class="close-button" onclick="rcloseForm()">
+               <h4>x</h4>
+            </button>
+            <label class="register-label" for="">First Name</label><br>
+            <input id="fname" class="login-form" type="text" name="fname" value="" placeholder="Enter First Name.." required><br>
+            <label class="register-label" for="">Last Name</label><br>
+            <input id="lname" class="login-form" type="text" name="lname" value="" placeholder="Enter Lase Name.." required><br>
+            <label class="register-label register-email-label" for="">Email</label><br>
+            <input id="email" class="login-form" type="email" name="email" value="" placeholder="Enter Email.." required><br>
+            <label class="register-label register-password-label" for="">Password</label><br>
+            <input id="pwd" class="login-form " type="password" name="pwd" value="" placeholder="Enter Password.." required><br>
+            <label class="register-label register-confirm-label" for="">Confirm Password</label><br>
+            <input id="cpwd" class="login-form" type="password" name="cpwd" value="" placeholder="Confirm Password.." required><br>
+            <span id="errorMessage" style="color:red;font-size:20px;"></span> <br>
+            <input class="login-button btn" name="send" value="Register" onclick="validate()">
+            <p class="login-label login-text">Already Have Account <a onclick="openForm(),rcloseForm()" class="login-signup">Log In</a></p>
+         </form>
+      </div>
+
+      <div class="login-box bg-dark" id="Login-Form">
+         <form id="login-form" class="login-form-main" action="login.php" method="post">
+            <h4 class="login-head">Log in</h4>
+            <label class="login-label email-label" for="">Email</label><br>
+            <input id="loginemail" class="login-form" type="email" name="email" value="" placeholder="Enter Email.."><br>
+            <label class="login-label" for="">Password</label><br>
+            <input id="loginpwd"class="login-form" type="password" name="pwd" value="" placeholder="Enter Password.."><br>
+            <span id="errorMessagelogin" style="color:red;font-size:20px;"></span> <br>
+            <input class="login-button btn" type="" name="send" value="Log in" onclick="login_validate()">
+            <p class="login-label login-text">Don't Have Account <a onclick="ropenForm(),closeForm()" class="login-signup">Register</a></p>
+         </form>
+      </div>
+
+   </section>
+
+   <section id="Services">
+      <h1 class="services-heading">OUR SERVICES</h1>
+   <div class="row">
+      <div class="col-2 box index-box">
+         <img src="images/icon-1.png" alt="">
+         <h4 class="box-text">Adventure</h4>
+      </div>
+      <div class="col-2 box index-box">
+         <img src="images/icon-2.png" alt="">
+         <h4 class="box-text">Tour Guide</h4>
+      </div>
+      <div class="col-2 box index-box">
+         <img src="images/icon-3.png" alt="">
+         <h4 class="box-text">Trekking</h4>
+      </div>
+      <div class="col-2 box index-box">
+         <img src="images/icon-4.png" alt="">
+         <h4 class="box-text">Camp Fire</h4>
+      </div>
+      <div class="col-2 box index-box">
+         <img src="images/icon-5.png" alt="">
+         <h4 class="box-text">Off Road</h4>
+      </div>
+      <div class="col-2 box index-box">
+         <img src="images/icon-6.png" alt="">
+         <h4 class="box-text">Camping</h4>
+      </div>
+   </div>
+   <a href="#Entry" onclick="openForm(),rcloseForm()"><button type="button" name="button" class="entrybtn">View Packages ></button></a>
+
+   </section>
+   <footer class="white-section shadow-lg entry-footer" id="footer">
+      <div class="container-fluid">
+         <i class="social-icon fab fa-facebook-f"></i>
+         <i class="social-icon fab fa-twitter"></i>
+         <i class="social-icon fab fa-instagram"></i>
+         <i class="social-icon fas fa-envelope"></i>
+         <p>© Copyright 2022 Travel "7" Wonders</p>
+      </div>
+   </footer>
+   <script>
+      function Pleaselogin() {
+         alert("Please Login");
+      }
+      function openForm() {
+         document.getElementById("Login-Form").style.display = "block";
+      }
+
+      function closeForm() {
+         document.getElementById("Login-Form").style.display = "none";
+      }
+
+      function ropenForm() {
+         document.getElementById("Register-Form").style.display = "block";
+      }
+
+      function rcloseForm() {
+         document.getElementById("Register-Form").style.display = "none";
+      }
+
+
+      function validate() {
+         let fname = document.getElementById("fname").value.trim();
+         let lname = document.getElementById("lname").value.trim();
+         let email = document.getElementById("email").value.trim();
+         let pwd = document.getElementById("pwd").value.trim();
+         let cpwd = document.getElementById("cpwd").value.trim();
+         let is_fname_valid = true;
+         let is_lname_valid = true;
+         let is_pwd_valid = true;
+         let is_email_valid = true;
+
+         if (fname == "") {
+            document.getElementById("errorMessage").innerText = "First Name cannot be empty";
+            is_pwd_valid = false;
+            return;
+         }
+         if (/\d/.test(fname)) {
+            document.getElementById("errorMessage").innerText = "First Name Can't Contain Digits";
+            is_name_valid = false;
+            return;
+         }
+         if (fname.length < 3){
+            document.getElementById("errorMessage").innerText = "First Name Can't Be Lessthan 3 Characters";
+            is_name_valid = false;
+            return;
+         }
+         if (lname == "") {
+            document.getElementById("errorMessage").innerText = "Last Name cannot be empty";
+            is_pwd_valid = false;
+            return;
+         }
+         if (/\d/.test(lname)) {
+            document.getElementById("errorMessage").innerText = "Last Name Can't Contain Digits";;
+            is_name_valid = false;
+            return;
+         }
+         if (lname.length < 3){
+            document.getElementById("errorMessage").innerText = "Last Name Can't Be Lessthan 3 Characters";
+            is_name_valid = false;
+            return;
+         }
+         if (email == "") {
+            document.getElementById("errorMessage").innerText = "Email cannot be empty";
+            is_pwd_valid = false;
+            return;
+         }
+         if (!/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/.test(email)) {
+            document.getElementById("errorMessage").innerText = "please enter a valid email";
+            is_pwd_valid = false;
+            return;
+         }
+         if (pwd == "") {
+            document.getElementById("errorMessage").innerText = "Password cannot be empty";
+            is_pwd_valid = false;
+            return;
+         }
+         if (pwd.length < 8) {
+            document.getElementById("errorMessage").innerText = "Password cannot be lessthan 8 Characters";
+            is_pwd_valid = false;
+            return;
+         }
+         if (!/[a-z]+/.test(pwd)) {
+            document.getElementById("errorMessage").innerText = "Password must contain one lowercase letter";
+            is_pwd_valid = false;
+            return;
+         }
+         if (!/[A-Z]+/.test(pwd)) {
+            document.getElementById("errorMessage").innerText = "Password must contain one uppercase letter";
+            is_pwd_valid = false;
+            return;
+         }
+         if (!/[@#&-]+/.test(pwd)) {
+            document.getElementById("errorMessage").innerText = "Password must contain one Special Character";
+            is_pwd_valid = false;
+            return;
+         }
+         if (cpwd == "") {
+            document.getElementById("errorMessage").innerText = "Confirm Password cannot be empty";
+            is_pwd_valid = false;
+            return;
+         }
+         if (pwd != cpwd) {
+            document.getElementById("errorMessage").innerText = "Password confirmation mismatch";
+            is_pwd_valid = false;
+            return;
+         }
+
+         if (is_fname_valid && is_lname_valid && is_pwd_valid) {
+            document.getElementById("form").submit();
+         }
+
+      }
+
+      function login_validate() {
+         let email = document.getElementById("loginemail").value.trim();
+         let pwd = document.getElementById("loginpwd").value.trim();
+         let is_login_email_valid = true;
+         let is_login_pwd_valid = true;
+         if (email == "") {
+            document.getElementById("errorMessagelogin").innerText = "Email cannot be empty";
+            is_pwd_valid = false;
+            return;
+         }
+         if (!/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/.test(email)) {
+            document.getElementById("errorMessagelogin").innerText = "please enter a valid email";
+            is_pwd_valid = false;
+            return;
+         }
+         if (pwd == "") {
+            document.getElementById("errorMessagelogin").innerText = "Password cannot be empty";
+            is_pwd_valid = false;
+            return;
+         }
+         if (is_login_email_valid && is_login_pwd_valid) {
+            document.getElementById("login-form").submit();
+         }
+      }
+   </script>
+</body>
+
+</html>
